@@ -25,4 +25,15 @@ Ahora el diagrama ERD:**Cardinalidades clave:**
 - `Producto_Ingrediente` resuelve M:N entre `Producto` e `Ingrediente`, guardando además la cantidad necesaria de cada ingrediente.
 - Un `Empleado` pertenece a una `Sucursal`, y cada `Pedido` queda registrado tanto con el empleado que atendió como con la sucursal.
 
-¿Quieres que profundice en alguna tabla, genere el script SQL de creación, o agreguemos entidades adicionales como `Descuentos`, `Inventario de sucursal` o `Métodos de pago`?
+## Tablas
+proporciona las entidades con sus atributos y tipo en forma de tabla para cada una de las entidades
+
+<img width="1440" height="3378" alt="image" src="https://github.com/user-attachments/assets/a6e59ca1-d59e-4567-8f84-233e1ca0acdd" />
+
+Algunas decisiones de diseño que vale la pena destacar:
+
+`precio_unitario` en `DETALLE_PEDIDO` se guarda de forma independiente al precio del producto, porque el precio puede cambiar con el tiempo y el pedido histórico debe conservar el valor original de la venta.
+
+`PRODUCTO_INGREDIENTE` tiene una llave primaria compuesta `(id_producto, id_ingrediente)` — no necesita un campo `id` propio ya que la combinación de las dos FK es siempre única.
+
+`stock_minimo` en `INGREDIENTE` permite implementar alertas de reposición sin lógica adicional: basta comparar `stock_actual < stock_minimo`.
