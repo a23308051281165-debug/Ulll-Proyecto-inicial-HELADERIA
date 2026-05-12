@@ -1,12 +1,15 @@
-Actúa como un Arquitecto Senior de Software especializado en Flutter Multiplatform, Firebase y Antigravity IDE.
-
-Objetivo:
-Desarrollar un SISTEMA DE GESTIÓN ADMINISTRATIVA PROFESIONAL para una HELADERÍA utilizando Flutter compatible con Android, Web, Windows e iOS.
-
-El sistema debe estar basado en el siguiente modelo ERD empresarial:
-
+# PROMPT V2 — BAD ICE CREAM
+Actúa como un arquitecto senior de software especializado en Flutter, Dart y Firebase.  
+Tu objetivo es ayudarme a diseñar y planificar profesionalmente una aplicación multiplataforma llamada “bad ice cream”, enfocada en administración de una heladeria, control de productos, empleados, clientes y sucursales.
+La aplicación será desarrollada en Flutter utilizando antigrabity y Firebase en configuración estándar (NO producción), compatible con:
+- Android
+- Web
+- Windows
+- iOS
+NO quiero código todavía.  
+Primero necesito un plan de implementación completo, profesional y humano en formato Markdown.
+La aplicación debe estar basada en la siguiente estructura lógica y entidades:
 # Entidades del sistema
-
 1. Cliente
 2. Empleado
 3. Sucursal
@@ -18,29 +21,7 @@ El sistema debe estar basado en el siguiente modelo ERD empresarial:
 9. Proveedor
 10. ProductoIngrediente
 
-El proyecto NO debe ser un CRUD simple.
-Debe funcionar como una plataforma administrativa completa, moderna y escalable.
-
-# Tecnologías obligatorias
-
-- Flutter latest stable
-- Dart
-- Firebase Core
-- Firebase Authentication
-- Cloud Firestore
-- Provider o Riverpod
-- Material Design 3
-- FlutterFire CLI
-
-# Compatibilidad
-
-- Android
-- Web
-- Windows
-- iOS
-
 # Objetivo general
-
 Desarrollar un sistema de gestión integral para administrar:
 - Ventas
 - Productos
@@ -236,117 +217,103 @@ Funciones:
 - Calcular subtotales
 - Mostrar ticket digital
 
-# Arquitectura profesional
 
-Organizar carpetas así:
-
-lib/
- ├── main.dart
- ├── config/
- ├── core/
- ├── models/
- ├── services/
- ├── providers/
- ├── screens/
- │    ├── auth/
- │    ├── dashboard/
- │    ├── clientes/
- │    ├── empleados/
- │    ├── sucursales/
- │    ├── productos/
- │    ├── categorias/
- │    ├── ingredientes/
- │    ├── proveedores/
- │    ├── pedidos/
- │    └── reportes/
- ├── widgets/
- ├── routes/
- ├── themes/
- └── utils/
-
-# Diseño UI/UX
-
-Implementar:
-- Material Design 3
-- Responsive Design
-- Sidebar para escritorio
-- BottomNavigationBar móvil
-- Cards modernas
-- Tablas visuales
-- FloatingActionButton
-- Dashboard profesional
-- Animaciones suaves
-
-# Colores
-
-Tema inspirado en heladería moderna:
-- Rosa pastel
-- Azul cielo
-- Blanco
-- Morado claro
-
-# Librerías necesarias
-
-Agregar:
-- firebase_core
-- firebase_auth
-- cloud_firestore
-- provider
-- intl
-- fluttertoast
-- fl_chart
-- cached_network_image
-
-# Funciones avanzadas
-
-Implementar:
-- Búsquedas en tiempo real
-- Filtros dinámicos
-- Reportes
-- Gráficas
-- Validaciones
-- Manejo de errores
-- Estados vacíos
-- Loading indicators
-- Persistencia offline
-
-# Firebase
-
-Configurar:
+# Necesito que generes:
+## 1. Descripción general del sistema
+Explica de manera profesional y humana cómo funcionará bad ice cream y cuál es su objetivo principal.
+## 2. Arquitectura del proyecto
+Define:
+- Arquitectura recomendada en Flutter
+- Organización de carpetas
+- Separación frontend/backend
+- Manejo de estados
+- Estructura escalable
+- Buenas prácticas
+## 3. Tecnologías necesarias
+Explica:
+- Flutter
+- Dart
+- Firebase
+- Firestore
 - Firebase Authentication
-- Firestore Database
-- Reglas de seguridad
-- Persistencia offline
+- Firebase Storage
+- Provider
+- Dependencias necesarias
+- Herramientas de desarrollo
+## 4. Diseño UI/UX
+Describe:
+- Estilo visual moderno
+- Diseño responsive
+- Navegación intuitiva
+- Paleta de colores
+- Experiencia de usuario
+- Diseño para Android/Web/Desktop
+## 5. Planeación del desarrollo
+Quiero un procedimiento PASO A PASO y humano:
+### Fase 1 — Configuración del entorno
+### Fase 2 — Configuración de Firebase
+### Fase 3 — Diseño de base de datos Firestore
+### Fase 4 — Sistema de autenticación
+### Fase 5 — Pantallas principales
+### Fase 6 — CRUD de entidades
+### Fase 7 — Gestión de transacciones
+### Fase 8 — Facturación y presupuestos
+### Fase 9 — Testing multiplataforma
+### Fase 10 — Implantación estándar
+Cada fase debe incluir:
+- Objetivos
+- Herramientas
+- Qué se desarrollará
+- Buenas prácticas
+- Posibles problemas
+- Soluciones recomendadas
+## 6. Dependencias recomendadas
+Genera una lista profesional de dependencias para pubspec.yaml y explica para qué sirve cada una.
+## 7. Seguridad y autenticación
+Explica:
+- Login
+- Registro
+- Manejo de sesiones
+- Seguridad básica en Firebase
+- Reglas Firestore
+- Roles de usuario
+## 8. Flujo de navegación
+Describe cómo navegará el usuario entre:
+- Login
+- Dashboard
+- Cuentas
+- Categorías
+- Presupuestos
+- Transacciones
+- Facturas
+- Perfil
+## 9. Plan de implantación
+Genera un plan profesional para desplegar la aplicación en modo estándar (NO producción).
+Incluye:
+- Configuración local
+- Compilación
+- APK
+- Flutter Web
+- Windows Desktop
+- GitHub
+- Control de versiones
+## 10. Recomendaciones profesionales
+Quiero recomendaciones reales como si fueras un desarrollador senior:
+- Organización
+- Escalabilidad
+- Rendimiento
+- Optimización
+- UI/UX
+- Firebase
+- Firestore
+- Arquitectura limpia
+# IMPORTANTE
+- NO generar código todavía
+- TODO debe estar en Markdown
+- Explica de manera clara, humana y profesional
+- Usa lenguaje técnico pero entendible para estudiantes
+- El resultado debe parecer un documento profesional de planificación de software
+- No resumir
+- Sé detallado
 
-# Firestore Rules
 
-Permitir acceso únicamente a usuarios autenticados.
-
-# Implementación profesional
-
-ANTES de generar código:
-1. Explicar arquitectura
-2. Explicar flujo del sistema
-3. Explicar estructura Firestore
-4. Explicar navegación
-5. Explicar relaciones entre entidades
-6. Explicar manejo de estado
-7. Explicar servicios
-
-DESPUÉS:
-- Generar código completo
-- Archivos separados
-- Código funcional
-- Compatible con Antigravity IDE
-- Sin pseudocódigo
-- Sin omitir imports
-
-# Resultado esperado
-
-Un sistema empresarial profesional de gestión para heladería compatible con:
-- Android
-- Web
-- Windows
-- iOS
-
-Con Firebase Authentication y Firestore completamente funcionales.
