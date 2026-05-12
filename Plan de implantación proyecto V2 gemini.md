@@ -1,4 +1,1016 @@
-# PROMPT V2 — BAD ICE CREAM
+# BAD ICE CREAM — PLANIFICACIÓN PROFESIONAL DEL SISTEMA
+
+## Sistema Administrativo Integral para Heladería
+
+### Flutter + Firebase + Antigravity IDE
+
+---
+
+# 1. Descripción general del sistema
+
+## ¿Qué es “bad ice cream”?
+
+**bad ice cream** será una aplicación administrativa multiplataforma desarrollada en **Flutter** y conectada con **Firebase**, diseñada para gestionar de manera moderna y profesional todos los procesos operativos de una heladería.
+
+El sistema permitirá administrar:
+
+* Ventas
+* Pedidos
+* Inventario
+* Productos
+* Ingredientes
+* Clientes
+* Empleados
+* Proveedores
+* Sucursales
+
+Todo desde una sola plataforma compatible con:
+
+* Android
+* Web
+* Windows Desktop
+* iOS
+
+---
+
+## Objetivo principal
+
+El objetivo del sistema es centralizar y automatizar las operaciones administrativas de la heladería para mejorar:
+
+* Organización
+* Control de inventario
+* Velocidad de ventas
+* Gestión de empleados
+* Supervisión de sucursales
+* Control financiero básico
+* Experiencia del usuario
+
+---
+
+## Filosofía del sistema
+
+La aplicación debe sentirse:
+
+* Moderna
+* Rápida
+* Intuitiva
+* Profesional
+* Escalable
+* Fácil de mantener
+
+No será únicamente un CRUD simple.
+Será un sistema administrativo real con arquitectura preparada para crecer.
+
+---
+
+# 2. Arquitectura del proyecto
+
+## Arquitectura recomendada
+
+Se recomienda utilizar:
+
+# CLEAN ARCHITECTURE + MVVM
+
+Esto permitirá:
+
+* Separar responsabilidades
+* Mantener código organizado
+* Facilitar mantenimiento
+* Escalar el proyecto
+* Reducir errores
+
+---
+
+# Estructura general
+
+```plaintext
+lib/
+│
+├── core/
+│   ├── constants/
+│   ├── theme/
+│   ├── routes/
+│   ├── services/
+│   ├── utils/
+│   └── widgets/
+│
+├── data/
+│   ├── models/
+│   ├── repositories/
+│   └── datasources/
+│
+├── domain/
+│   ├── entities/
+│   ├── usecases/
+│   └── interfaces/
+│
+├── presentation/
+│   ├── screens/
+│   ├── providers/
+│   ├── controllers/
+│   └── components/
+│
+├── firebase/
+│
+├── config/
+│
+└── main.dart
+```
+
+---
+
+# Separación Frontend / Backend
+
+## Frontend
+
+Flutter manejará:
+
+* UI
+* Navegación
+* Formularios
+* Dashboard
+* Estado visual
+* Experiencia de usuario
+
+---
+
+## Backend
+
+Firebase manejará:
+
+* Firestore
+* Authentication
+* Storage
+* Reglas de seguridad
+* Persistencia
+
+---
+
+# Manejo de estados
+
+## Recomendación principal
+
+Usar:
+
+# Provider
+
+Porque:
+
+* Fácil para estudiantes
+* Ligero
+* Escalable
+* Oficialmente recomendado
+* Excelente integración con Flutter
+
+---
+
+## Alternativas futuras
+
+Más adelante podría migrarse a:
+
+* Riverpod
+* Bloc
+* GetX
+
+---
+
+# Buenas prácticas
+
+## Recomendaciones
+
+* Separar lógica y UI
+* Evitar código duplicado
+* Crear componentes reutilizables
+* Usar nombres claros
+* Documentar funciones
+* Manejar errores correctamente
+* Mantener consistencia visual
+
+---
+
+# 3. Tecnologías necesarias
+
+# Flutter
+
+Framework multiplataforma de Google.
+
+Permite crear:
+
+* Android
+* Web
+* Windows
+* iOS
+
+Con un solo código fuente.
+
+---
+
+# Dart
+
+Lenguaje oficial de Flutter.
+
+Ventajas:
+
+* Rápido
+* Seguro
+* Moderno
+* Fácil de aprender
+
+---
+
+# Firebase
+
+Backend cloud de Google.
+
+Se utilizará para:
+
+* Base de datos
+* Login
+* Hosting
+* Storage
+
+---
+
+# Firestore
+
+Base de datos NoSQL documental.
+
+Ideal porque:
+
+* Flexible
+* Escalable
+* Tiempo real
+* Fácil integración
+
+---
+
+# Firebase Authentication
+
+Permitirá:
+
+* Login
+* Registro
+* Persistencia de sesión
+* Roles
+* Seguridad
+
+---
+
+# Firebase Storage
+
+Permitirá almacenar:
+
+* Imágenes de productos
+* Logos
+* Tickets
+* Archivos
+
+---
+
+# Provider
+
+Gestor de estado recomendado.
+
+Funciones:
+
+* Actualizar UI
+* Compartir datos
+* Gestionar sesiones
+* Escuchar cambios
+
+---
+
+# Herramientas recomendadas
+
+## Desarrollo
+
+* Flutter SDK
+* Dart SDK
+* Android Studio
+* VS Code
+* Antigravity IDE
+
+---
+
+## Control de versiones
+
+* Git
+* GitHub
+
+---
+
+## Diseño UI
+
+* Figma
+
+---
+
+# 4. Diseño UI/UX
+
+# Estilo visual
+
+El sistema debe tener:
+
+* Diseño minimalista
+* Apariencia moderna
+* Espacios limpios
+* Tarjetas visuales
+* Sombras suaves
+* Bordes redondeados
+
+---
+
+# Paleta de colores recomendada
+
+## Principal
+
+* Azul oscuro
+* Celeste
+* Blanco
+
+## Secundarios
+
+* Verde éxito
+* Rojo alerta
+* Amarillo advertencia
+
+---
+
+# Diseño responsive
+
+La interfaz debe adaptarse a:
+
+* Celulares
+* Tablets
+* Web
+* Desktop
+
+---
+
+# Navegación
+
+## Android/iOS
+
+* BottomNavigationBar
+* Drawer lateral
+
+## Web/Desktop
+
+* Sidebar administrativa
+
+---
+
+# Dashboard moderno
+
+Debe incluir:
+
+* KPIs
+* Gráficas
+* Tarjetas dinámicas
+* Estadísticas
+* Accesos rápidos
+
+---
+
+# Experiencia de usuario
+
+El usuario debe poder:
+
+* Encontrar información rápido
+* Navegar intuitivamente
+* Realizar ventas fácilmente
+* Gestionar inventario sin confusión
+
+---
+
+# 5. Planeación del desarrollo
+
+# FASE 1 — Configuración del entorno
+
+## Objetivos
+
+Preparar herramientas y entorno.
+
+---
+
+## Herramientas
+
+* Flutter SDK
+* Dart
+* Git
+* Firebase CLI
+* Antigravity
+
+---
+
+## Qué se desarrollará
+
+* Instalaciones
+* Configuración Flutter
+* Proyecto inicial
+
+---
+
+## Buenas prácticas
+
+* Verificar versiones
+* Usar Git desde el inicio
+* Crear ramas
+
+---
+
+## Posibles problemas
+
+### Error Flutter Doctor
+
+Solución:
+
+```bash
+flutter doctor
+```
+
+---
+
+# FASE 2 — Configuración de Firebase
+
+## Objetivos
+
+Conectar Flutter con Firebase.
+
+---
+
+## Qué se desarrollará
+
+* Proyecto Firebase
+* Firestore
+* Authentication
+* Storage
+
+---
+
+## Buenas prácticas
+
+* Nombrar colecciones correctamente
+* Mantener reglas organizadas
+
+---
+
+## Posibles problemas
+
+### Error SHA-1 Android
+
+Solución:
+
+Configurar certificados correctamente.
+
+---
+
+# FASE 3 — Diseño de Firestore
+
+## Objetivos
+
+Construir estructura documental.
+
+---
+
+# Colecciones principales
+
+```plaintext
+clientes
+empleados
+sucursales
+productos
+categorias
+ingredientes
+proveedores
+pedidos
+detalle_pedido
+producto_ingrediente
+```
+
+---
+
+## Buenas prácticas
+
+* IDs únicos
+* Evitar duplicidad
+* Índices optimizados
+
+---
+
+## Posibles problemas
+
+### Consultas lentas
+
+Solución:
+
+Crear índices compuestos.
+
+---
+
+# FASE 4 — Sistema de autenticación
+
+## Objetivos
+
+Crear login profesional.
+
+---
+
+## Qué incluirá
+
+* Login
+* Logout
+* Persistencia
+* Roles
+* Validaciones
+
+---
+
+## Buenas prácticas
+
+* Validar formularios
+* Ocultar contraseñas
+* Manejar errores
+
+---
+
+# FASE 5 — Pantallas principales
+
+## Pantallas
+
+* Splash
+* Login
+* Dashboard
+* Clientes
+* Productos
+* Pedidos
+* Inventario
+* Empleados
+
+---
+
+## Buenas prácticas
+
+* Componentes reutilizables
+* Responsive design
+
+---
+
+# FASE 6 — CRUD de entidades
+
+## Objetivos
+
+Implementar operaciones completas.
+
+---
+
+## CRUDs
+
+* Clientes
+* Productos
+* Ingredientes
+* Categorías
+* Empleados
+* Pedidos
+
+---
+
+## Buenas prácticas
+
+* Confirmaciones antes de eliminar
+* Formularios limpios
+
+---
+
+# FASE 7 — Gestión de transacciones
+
+## Objetivos
+
+Administrar pedidos y ventas.
+
+---
+
+## Funciones
+
+* Generar pedidos
+* Calcular totales
+* Actualizar stock
+
+---
+
+## Posibles problemas
+
+### Desincronización de inventario
+
+Solución:
+
+Usar transacciones Firestore.
+
+---
+
+# FASE 8 — Facturación y presupuestos
+
+## Objetivos
+
+Crear tickets digitales.
+
+---
+
+## Funciones
+
+* Tickets PDF
+* Historial
+* Totales automáticos
+
+---
+
+# FASE 9 — Testing multiplataforma
+
+## Objetivos
+
+Validar funcionamiento.
+
+---
+
+## Pruebas
+
+* Android
+* Web
+* Windows
+* iOS
+
+---
+
+## Buenas prácticas
+
+* Probar formularios
+* Validar navegación
+* Revisar responsive
+
+---
+
+# FASE 10 — Implantación estándar
+
+## Objetivos
+
+Publicar versión académica.
+
+---
+
+## Despliegues
+
+* APK Android
+* Flutter Web
+* Windows EXE
+
+---
+
+# 6. Dependencias recomendadas
+
+# Firebase
+
+```yaml
+firebase_core
+firebase_auth
+cloud_firestore
+firebase_storage
+```
+
+Funciones:
+
+* Conexión backend
+* Login
+* Base de datos
+* Archivos
+
+---
+
+# Estado
+
+```yaml
+provider
+```
+
+Funciones:
+
+* Manejo de estado
+
+---
+
+# Navegación
+
+```yaml
+go_router
+```
+
+Funciones:
+
+* Rutas protegidas
+
+---
+
+# UI
+
+```yaml
+flutter_screenutil
+google_fonts
+fl_chart
+```
+
+Funciones:
+
+* Responsive
+* Tipografías
+* Gráficas
+
+---
+
+# Utilidades
+
+```yaml
+intl
+uuid
+```
+
+Funciones:
+
+* Fechas
+* IDs únicos
+
+---
+
+# Imágenes
+
+```yaml
+image_picker
+cached_network_image
+```
+
+---
+
+# PDFs
+
+```yaml
+pdf
+printing
+```
+
+---
+
+# 7. Seguridad y autenticación
+
+# Login
+
+El usuario ingresará:
+
+* Email
+* Contraseña
+
+---
+
+# Roles
+
+## Administrador
+
+Acceso completo.
+
+## Empleado
+
+Acceso limitado.
+
+## Cajero
+
+Ventas y pedidos.
+
+---
+
+# Persistencia de sesión
+
+Firebase mantendrá sesión activa automáticamente.
+
+---
+
+# Seguridad Firestore
+
+## Reglas recomendadas
+
+* Usuarios autenticados
+* Restricción por roles
+* Protección de escritura
+
+---
+
+# Validaciones
+
+* Campos vacíos
+* Emails válidos
+* Contraseñas seguras
+
+---
+
+# 8. Flujo de navegación
+
+# Flujo general
+
+```plaintext
+Splash
+   ↓
+Login
+   ↓
+Dashboard
+   ↓
+Módulos
+```
+
+---
+
+# Navegación principal
+
+## Dashboard
+
+Acceso rápido a:
+
+* Ventas
+* Pedidos
+* Productos
+* Clientes
+
+---
+
+# Productos
+
+* Lista
+* Crear
+* Editar
+* Eliminar
+
+---
+
+# Pedidos
+
+* Nuevo pedido
+* Historial
+* Ticket
+
+---
+
+# Perfil
+
+* Datos usuario
+* Logout
+
+---
+
+# 9. Plan de implantación
+
+# Configuración local
+
+```bash
+flutter pub get
+flutter run
+```
+
+---
+
+# APK Android
+
+```bash
+flutter build apk
+```
+
+---
+
+# Flutter Web
+
+```bash
+flutter build web
+```
+
+---
+
+# Windows Desktop
+
+```bash
+flutter build windows
+```
+
+---
+
+# GitHub
+
+## Flujo recomendado
+
+```plaintext
+main
+develop
+feature/*
+```
+
+---
+
+# Control de versiones
+
+## Buenas prácticas
+
+* Commits claros
+* Push frecuentes
+* Documentar cambios
+
+---
+
+# 10. Recomendaciones profesionales
+
+# Organización
+
+* Modularizar todo
+* Evitar archivos gigantes
+* Separar lógica
+
+---
+
+# Escalabilidad
+
+Pensar desde el inicio en:
+
+* Nuevos módulos
+* Más sucursales
+* Más usuarios
+
+---
+
+# Rendimiento
+
+## Recomendaciones
+
+* Consultas optimizadas
+* Lazy loading
+* Caché de imágenes
+
+---
+
+# Optimización Firestore
+
+## Evitar
+
+* Consultas innecesarias
+* Documentos enormes
+
+---
+
+# UI/UX
+
+## Recomendaciones
+
+* Interfaces limpias
+* Feedback visual
+* Indicadores de carga
+
+---
+
+# Arquitectura limpia
+
+## Beneficios
+
+* Fácil mantenimiento
+* Menos errores
+* Escalabilidad profesional
+
+---
+
+# Recomendación final como arquitecto senior
+
+Para que “bad ice cream” se vea verdaderamente profesional, el enfoque correcto NO es comenzar escribiendo código inmediatamente.
+
+Primero debe existir:
+
+1. Arquitectura clara
+2. Estructura escalable
+3. Base de datos organizada
+4. Diseño UI consistente
+5. Navegación definida
+6. Roles y permisos planeados
+7. Flujo completo del sistema
+
+Cuando esa base está bien diseñada, el desarrollo en Flutter se vuelve mucho más rápido, limpio y mantenible.
+
+Este proyecto tiene potencial para convertirse en:
+
+* Sistema POS
+* ERP básico
+* Plataforma multi sucursal
+* Sistema de inventario profesional
+* Aplicación comercial real
+
+La clave será mantener:
+
+* Organización
+* Modularidad
+* Consistencia
+* Buenas prácticas
+* Escalabilidad desde el inicio
+
+
+### PROMPT V2 — BAD ICE CREAM
 Actúa como un arquitecto senior de software especializado en Flutter, Dart y Firebase.  
 Tu objetivo es ayudarme a diseñar y planificar profesionalmente una aplicación multiplataforma llamada “bad ice cream”, enfocada en administración de una heladeria, control de productos, empleados, clientes y sucursales.
 La aplicación será desarrollada en Flutter utilizando antigrabity y Firebase en configuración estándar (NO producción), compatible con:
